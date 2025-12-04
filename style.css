@@ -1,0 +1,166 @@
+/* style.css */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #dfebbc;
+  font-size: large;
+  color :#0a6e3e;
+
+}
+
+.brand-link {
+  color: #0a6e3e; 
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.brand-link:hover {
+  color: #34ac72; 
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(ffbg.png);
+}
+
+.cta {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-family: poppins, sans-serif;
+  background-color: #52972f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border:none;
+  transition: 150ms ease;
+}
+
+button.cta:hover {
+  background-color: #34ac72;
+  scale:1.2;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: rgb(215, 238, 182);
+  text-align: center;
+}
+
+.feature-card {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background: #b6d7a8;
+  border: 1px solid #34ac72;
+  box-shadow: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.visual img {
+  width: 45%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+.visual {
+  text-align: center;
+  padding: 10px 13px;
+}
+
+
+.info {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.feature-card {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background: #b6d7a8;
+  border: 1px solid #34ac72;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+/* animation keyframes */
+@keyframes fadeUp {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Hover effect animation */
+.feature-card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+.description {
+  background: #d0e8b4;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.cta-final {
+  text-align: right;
+  padding: 5px 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* <-- adds spacing between cards */
+}
+
+.card, .card1 {
+  min-height: 550px;
+  height: auto;
+  width: 370px;
+  background-color: rgb(188, 211, 148);
+  padding: 3% 8%;
+  border: 10px solid rgb(150, 180, 120);
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e2e6a6;
+  color: #3b8a0d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  .feature-card {
+    margin: 10px 0;
+  }
+}
